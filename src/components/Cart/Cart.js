@@ -10,7 +10,7 @@ const Cart = ({cart}) => {
             </div>
             <div className="cart__detail">
                 <div className="cart__specifications">
-                    <p>Selected Items: {6}</p>
+                    <p>Selected Items: {cart.length}</p>
                     <p>Total Price: ${6}</p>
                     <p>Total Shipping Charge: ${6}</p>
                     <p>Tax: ${6}</p>
