@@ -1,11 +1,24 @@
 import React from 'react';
+import logo from '../../Logo.svg';
+import './Header.css';
+import LinkTo from './../LinkTo/LinkTo';
 
 const Header = () => {
     return (
         <div className="header__area">
             <div className="inner__header__area container">
                 <div className="header__content">
-                    <h1>This is header</h1>
+                    <div className="header__logo">
+                        <a href="/">
+                            <img src={logo} alt="" />
+                        </a>
+                    </div>
+                    <nav className="header__navigation">
+                        <ul>
+                            <li><LinkTo className="link" to="/">Home</LinkTo></li>
+                            <li><LinkTo className="link" to="/shop">Shop</LinkTo></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

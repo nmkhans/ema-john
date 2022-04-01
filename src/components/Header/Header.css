@@ -1,0 +1,29 @@
+.header__area {
+    background: #1C2B35;
+    padding: 15px 0;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navigation ul {
+    list-style: none;
+}
+
+.header__navigation ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.header__navigation ul li .link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    transition: .3s;
+}
