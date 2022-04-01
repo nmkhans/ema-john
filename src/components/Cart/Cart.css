@@ -1,3 +1,66 @@
 .cart {
-    border: 1px solid;
+    background: #FF99004D;
+    padding: 0 7.5%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+.cart__title {
+    margin-top: 20px;
+}
+
+.cart__title > h3 {
+    color: #1C2B35;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.cart__detail {
+    margin-top: 50px;
+}
+
+.cart__specifications > p {
+    color: #2A414F;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.cart__grand__total > h5 {
+    color: #0E161A;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.cart__summery__button {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart__summery__button > button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    height: 45px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.cart__summery__button > button:nth-child(1) {
+    background: #FF3030;
+}
+
+.cart__summery__button > button:nth-child(2) {
+    background: #FF9900;
 }
