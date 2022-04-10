@@ -20,7 +20,7 @@ const Shop = () => {
 
     return (
         <div className="shop">
-            <Products addToCart={addToCart} getProducts={getProducts}/>
+            <Products addToCart={addToCart} getProducts={getProducts} />
             <Cart cart={cart}/>
         </div>
     );
