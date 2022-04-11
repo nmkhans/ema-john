@@ -13,6 +13,7 @@
 .productSummery__left {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .productSummery__img > img {
@@ -45,8 +46,13 @@
     outline: none;
     background: #EB57574D;
     color: #EB5757;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.productSummery__delete button span .delete__icon {
+    font-size: 30px;
 }
