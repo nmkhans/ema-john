@@ -1,0 +1,8 @@
+.orderReview {
+    padding: 50px 0;
+}
+
+.orderReview__content {
+    display: flex;
+    justify-content: space-around;
+}
