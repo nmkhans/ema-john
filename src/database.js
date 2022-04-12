@@ -39,7 +39,14 @@ const removeFromDb = id =>{
 }
 
 const deleteShoppingCart = () =>{
-    localStorage.removeItem('cart');
+    // localStorage.removeItem('cart');
+    const cartString = localStorage.getItem('cart');
+    let cart = JSON.parse(cartString);
+    if(cart) {
+        cart = {};
+        const newCart = JSON.stringify(cart);
+        localStorage.setItem('cart', newCart);
+    }
 }
 
 export {
