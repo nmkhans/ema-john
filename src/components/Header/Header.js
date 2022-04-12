@@ -18,6 +18,7 @@ const Header = () => {
                             <li><LinkTo className="link" to="/">Home</LinkTo></li>
                             <li><LinkTo className="link" to="/shop">Shop</LinkTo></li>
                             <li><LinkTo className="link" to="/order-review">Order Review</LinkTo></li>
+                            <li><LinkTo className="link" to="/login">Login</LinkTo></li>
                         </ul>
                     </nav>
                 </div>
