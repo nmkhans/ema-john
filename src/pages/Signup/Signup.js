@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import './Signup.css';
 import { Link } from 'react-router-dom';
+import useFirebase from '../../hooks/useFirebase';
 
 const Signup = () => {
-
+    
     // State Decleration
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
-
+    const { createUser } = useFirebase();
+    
     // handle signup fields
     const handleEmail = (event) => {
         setEmail(event.target.value);
@@ -23,9 +25,14 @@ const Signup = () => {
         setConfirmPassword(event.target.value);
     }
 
+    // handle form submit
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        console.log(email, password, confirmPassword)
+        if(password === confirmPassword) {
+            createUser(email, password, setError);
+        } else {
+            setError('Both password did not matched!');
+        }
     }
 
     return (
@@ -57,9 +64,7 @@ const Signup = () => {
                                         <Link to="/login"><button>Login</button></Link>
                                     </div>
                                 </div>
-                                <div className="already__user">
-
-                                </div>
+                                <div className="show__error">{error}</div>
                             </form>
                         </div>
                     </div>

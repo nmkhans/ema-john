@@ -27,3 +27,16 @@
     color: #fff;
     transition: .3s;
 }
+
+.header__navigation ul li button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}

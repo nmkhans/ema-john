@@ -1,9 +1,10 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import img from './feature.jpg';
 import './Home.css';
+import img from './feature.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+
     const navigate = useNavigate();
     const shopPage = () => {
         navigate('/shop');
@@ -26,7 +27,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="home__right">
-                        <img src= {img}alt="" />
+                        <img src={img} alt="" />
                     </div>
                 </div>
             </div>
