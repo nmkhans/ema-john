@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { createUserWithEmailAndPassword, onAuthStateChanged, sendEmailVerification, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { toast } from 'react-toastify';
 import auth from '../firebase.init';
 
 
@@ -44,6 +45,7 @@ const useFirebase = () => {
                 const user = userCredential.user;
                 setUserInfo(user);
                 navigate(from, { replace: true });
+                toast('success');
             })
             .catch(error => {
                 setError(error.message.slice(22, 42));
