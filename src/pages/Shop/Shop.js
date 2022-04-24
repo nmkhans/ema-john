@@ -12,19 +12,19 @@ const Shop = () => {
 
     const addToCart = (selectedProduct) => {
         let newCart = [];
-        const exist = products.find(product => product.id === selectedProduct.id);
+        const exist = products.find(product => product._id === selectedProduct._id);
         if(!exist) {
             selectedProduct.quantity = 1;
             newCart = [...products, selectedProduct];
         } else {
-            const rest = products.filter(product => product.id !== selectedProduct.id);
+            const rest = products.filter(product => product._id !== selectedProduct._id);
             exist.quantity += 1;
             newCart = [...rest, exist];
         }
 
 
         setCart(newCart);
-        addToDb(selectedProduct.id)
+        addToDb(selectedProduct._id)
     }
 
     // Empty Cart

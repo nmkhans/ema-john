@@ -12,7 +12,7 @@ const Products = ({addToCart}) => {
             <div className="inner__products container">
                 <div className="products__content">
                     {
-                        products.map(product => <Product key={product.id} product={product} addToCart={addToCart} />)
+                        products.map(product => <Product key={product._id} product={product} addToCart={addToCart} />)
                     }
                 </div>
             </div>
