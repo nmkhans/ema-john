@@ -8,7 +8,8 @@ import useProducts from './../../hooks/useProducts';
 
 const Shop = () => {
     const [products] = useProducts();
-    const [cart, setCart] = useCart(products);
+    const [cart, setCart] = useCart();
+    
 
     const addToCart = (selectedProduct) => {
         let newCart = [];

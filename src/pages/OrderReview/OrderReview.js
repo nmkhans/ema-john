@@ -9,7 +9,7 @@ import { removeFromDb } from '../../database';
 const OrderReview = () => {
 
     const [products] = useProducts();
-    const [cart, setCart] = useCart(products);
+    const [cart, setCart] = useCart();
     const deleteItemFromCart = (productInfo) => {
         const rest = cart.filter(product => product._id !== productInfo._id);
         setCart(rest);
